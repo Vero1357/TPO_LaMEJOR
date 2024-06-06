@@ -124,7 +124,7 @@ input[type="radio"] {
 .botones_grid {
     grid-area: botones_grid;
     margin-left: 10px;
-    text-align: center;
+    
 }
 
 /* Estilos del header de todas las paginas */
