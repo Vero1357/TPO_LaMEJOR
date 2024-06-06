@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
+
+    <script src="https://kit.fontawesome.com/e0d3159641.js" crossorigin="anonymous"></script>
+
+    <!-- hoja de estilos CCS -->
+    <link rel="stylesheet" href="../style/estilos.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Oleo+Script:wght@400;700&family=Yanone+Kaffeesatz:wght@200..700&display=swap"
+        rel="stylesheet">
+
+    <title>La Mejor | Contacto</title>
+</head>
+
+<body>
+    <header>
+        <div class="home_grid">
+            <div class="nombre">
+                <h1>La Mejor</h1>
+            </div>
+            <div class="logo_ensalada">
+                <img src="../images/icons8-ensalada.gif" alt="">
+            </div>
+        </div>
+
+        </div>
+        <div class="menu_grid">
+            <ul class="botones_grid">
+                <li><a class="menu_boton" href="../index.html">Inicio</a></li>
+
+            </ul>
+    </header>
+    <main>
+
+        <h2>Dejanos tus sugerencias o dudas</h2>
+
+        <form action="" method="GET" class="formulario" id="formulario" novalidate>
+
+            <!-- Nombre -->
+            <div class="form-control" id="grupo-nombre">
+                <label for="nombre" class="form-label">Nombre:</label>
+                <div class="form-control-input">
+                    <input type="text" class="formulario_input" name="nombre" id="nombre"
+                        placeholder="Escribe tu nombre..." required>
+
+                    <i id="check_error_nombre" class="fa-solid fa-circle-xmark"></i>
+                    <i id="check_nombre" class="fa-solid fa-circle-check"></i>
+
+                </div>
+                <div id="error_nombre">
+                    <p>Solo acepta letras!!</p>
+                </div>
+            </div>
+
+            <!-- Apellido -->
+
+            <div class="form-control" id="grupo-apellido">
+                <label for="apellido" class="form-label">Apellido:</label>
+                <div class="form-control-input">
+                    <input type="text" class="form-input" name="apellido" id="apellido"
+                        placeholder="Escribe tu apellido..." required>
+                    <i id="check_error_apellido" class="fa-solid fa-circle-xmark"></i>
+                    <i id="check_apellido" class="fa-solid fa-circle-check"></i>
+                </div>
+                <div id="error_apellido">
+                    <p>Solo acepta letras!!</p>
+                </div>
+            </div>
+
+
+            <!-- Mail -->
+            <div class="form-control" id="grupo-email">
+                <label for="email" class="form-label">Mail:</label>
+                <div class="form-control-input">
+                    <input type="email" class="form-input" name="email" id="email" placeholder="Escribe tu email..."
+                        required>
+                    <i id="check_error_email" class="fa-solid fa-circle-xmark"></i>
+                    <i id="check_email" class="fa-solid fa-circle-check"></i>
+                </div>
+                <div id="error_email">
+                    <p>El correo puede contener letras, números, puntos, guiones y guión bajo</p>
+                </div>
+            </div>
+
+
+            <!-- Fecha de nacimiento -->
+            <div class="form-control" id="grupo-nac">
+                <label for="nacim" class="form-label">Fecha de nacimiento:</label>
+                <div class="form-control-input">
+                    <input type="date" class="form-input" name="nacim" id="nacim" required>
+                    <i id="check_error_nacim" class="fa-solid fa-circle-xmark"></i>
+                    <i id="check_nacim" class="fa-solid fa-circle-check"></i>
+                </div>
+                <div id="error_nacim">
+                    <p>Indicar la fecha en números</p>
+                </div>
+            </div>
+
+            <!-- Consigna: Radiobutton -->
+
+            <div class="form-control" id="grupo-comer">
+                <label>Elige una opción:</label>
+                <label class="label-comer">
+                    <input type="radio" name="opcion" value="opcion1"> Comer en Casa<br>
+                </label>
+
+                <label class="label-comer">
+                    <input type="radio" name="opcion" value="opcion2"> Comer en el Restaurante<br>
+                </label>
+
+            </div>
+
+            <!-- Consigna: Imagen -->
+            <div class="form-control" id="grupo-imagen">
+                <label for="imagen" class="form-label">¿Qué cocinaste esta semana?, subí la imagen:</label>
+                <div class="form-control-input">
+                    <input type="file" class="form-input" id="imagen" name="imagen" accept="image/*">
+
+                </div>
+
+            </div>
+
+            <!-- Consigna: Select -->
+            <div class="form-label" id="grupo-comida">
+                <label for="comida">Comida Favorita:</label>
+                <select name="comida" id="comida" class="form-select">
+                    <option value="">Seleccionar</option>
+                    <option value="MI">Milanesa</option>
+                    <option value="AS">Asado</option>
+                    <option value="PE">Pescado</option>
+                    <option value="PI">Pizza</option>
+                    <option value="CH">Choripan</option>
+                    <option value="OT">Otra</option>
+                </select>
+            </div>
+
+
+            <!-- Consulta -->
+
+            <div class="form-control" id="grupo-consulta">
+                <label class="form-label" for="consul">Mensaje:</label>
+                <textarea name="consul" id="consul" cols=28" rows="8" placeholder="Deja tu mensaje..."></textarea>
+            </div>
+
+            <!-- Términos y Condiciones - Consigna: checkbox -->
+
+            <div class="form-control" id="grupo-term">
+                <label class="form-label">
+                    <input type="checkbox" class="checkbox" name="terminos" id="terminos" required> Acepto Términos y
+                    Condiciones
+                </label>
+            </div>
+
+            <div id="error-term">
+                <p><i class="fa-solid fa-triangle-exclamation"></i> <b>Error: </b>Debe completar todos los campos</p>
+
+            </div>
+
+            <!-- Botón de Registro -->
+
+            <div class="form-control form-btn-enviar">
+                <button class="boton_enviar" type="button" onclick="controlarInput()">Enviar</button>
+                <div id="terminos_ok">
+                    <p>Formulario enviado con Éxito</p>
+                </div>
+            </div>
+            <br>
+
+            <!-- link de ayuda -->
+            <div class="form-help">
+                <a href="#">¿Necesitas ayuda?</a>
+            </div>
+
+        </form>
+    
+
+
+    </main>
+    <script src="../javascrip/script.js"></script>
+
+    <footer>
+        <br>
+        <h2>Seguinos</h2>
+        <div class="redes">
+            <p>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-pinterest"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i><br><br>
+                Derechos reservados @2024
+            </p>
+            <br>
+        </div>
+
+    </footer>
+</body>
+
+</html>
