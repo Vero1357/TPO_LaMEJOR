@@ -120,12 +120,22 @@ input[type="radio"] {
 
 }
 
+
 /* Estilos del header de todas las paginas */
 .botones_grid {
     grid-area: botones_grid;
     margin-left: 10px;
+
     
 }
+
+/* Estilos del header de la página ubicación */
+.menu_grid2 {
+    padding: 20px;
+    display: flex;
+
+}
+
 
 /* Estilos del header de todas las paginas */
 .menu_boton {
@@ -138,11 +148,11 @@ input[type="radio"] {
     margin: 1%;
     border-radius: 10px;
     box-shadow: 7px 7px 15px #592A08;
-}
+} 
 
 /* Estilos del header de todas las paginas */
 .menu_boton:hover {
-    background-color: ghostwhite;
+    background-color: chocolate;
     box-shadow: 15px 15px 25px #592A08;
     transform: scale(1.2);
 }
